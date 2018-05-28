@@ -1,0 +1,13 @@
+C:\Temp\DEPEND\APITest\DependApiTest\DependApiTest\bin\Debug\DependApiTest.exe.config
+C:\Temp\DEPEND\APITest\DependApiTest\DependApiTest\bin\Debug\DependApiTest.exe
+C:\Temp\DEPEND\APITest\DependApiTest\DependApiTest\bin\Debug\DependApiTest.pdb
+C:\Temp\DEPEND\APITest\DependApiTest\DependApiTest\obj\Debug\ResolveAssemblyReference.cache
+C:\Temp\DEPEND\APITest\DependApiTest\DependApiTest\obj\Debug\DependApiTest.exe
+C:\Temp\DEPEND\APITest\DependApiTest\DependApiTest\obj\Debug\DependApiTest.pdb
+C:\Users\au_xavier.watson\source\repos\DependApiTest\DependApiTest\bin\Debug\DependApiTest.exe.config
+C:\Users\au_xavier.watson\source\repos\DependApiTest\DependApiTest\bin\Debug\DependApiTest.exe
+C:\Users\au_xavier.watson\source\repos\DependApiTest\DependApiTest\bin\Debug\DependApiTest.pdb
+C:\Users\au_xavier.watson\source\repos\DependApiTest\DependApiTest\obj\Debug\DependApiTest.csprojResolveAssemblyReference.cache
+C:\Users\au_xavier.watson\source\repos\DependApiTest\DependApiTest\obj\Debug\DependApiTest.csproj.CoreCompileInputs.cache
+C:\Users\au_xavier.watson\source\repos\DependApiTest\DependApiTest\obj\Debug\DependApiTest.exe
+C:\Users\au_xavier.watson\source\repos\DependApiTest\DependApiTest\obj\Debug\DependApiTest.pdb

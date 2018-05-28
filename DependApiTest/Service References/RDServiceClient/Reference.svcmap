@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="c63d4ca5-81c4-449c-b5d0-be77a1af06a0" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://10.100.100.230/Live_copy/RDService.svc/mex" Protocol="mex" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="ML7.wsdl" MetadataType="Wsdl" ID="28344eca-f179-472c-afad-69d4ceebe954" SourceId="1" SourceUrl="http://10.100.100.230/Live_copy/RDService.svc/mex" />
+    <MetadataFile FileName="service.wsdl" MetadataType="Wsdl" ID="e7f33f48-6707-41ca-87e4-2e206674cacc" SourceId="1" SourceUrl="http://10.100.100.230/Live_copy/RDService.svc/mex" />
+    <MetadataFile FileName="ML7.xsd" MetadataType="Schema" ID="704707cc-5453-4213-aca7-2aa59abfc3e3" SourceId="1" SourceUrl="http://10.100.100.230/Live_copy/RDService.svc/mex" />
+    <MetadataFile FileName="service.xsd" MetadataType="Schema" ID="99af4794-7eef-43c9-98cd-92618b87f98c" SourceId="1" SourceUrl="http://10.100.100.230/Live_copy/RDService.svc/mex" />
+    <MetadataFile FileName="RDService4.xsd" MetadataType="Schema" ID="3013c368-6bde-426e-bee6-542c2e2f26fb" SourceId="1" SourceUrl="http://10.100.100.230/Live_copy/RDService.svc/mex" />
+    <MetadataFile FileName="RD.xsd" MetadataType="Schema" ID="999517bb-2df2-492d-b17e-29210b933789" SourceId="1" SourceUrl="http://10.100.100.230/Live_copy/RDService.svc/mex" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

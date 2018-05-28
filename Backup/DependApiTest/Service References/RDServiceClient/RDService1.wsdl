@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:tns="HTTP://WWW.PERCIVAL.CO.UK/ML7" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" targetNamespace="HTTP://WWW.PERCIVAL.CO.UK/ML7" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="HTTP://WWW.PERCIVAL.CO.UK/ML7/Imports">
+      <xsd:import schemaLocation="http://jse-vm-pvl-2008/Train/RDService.svc?xsd=xsd0" namespace="HTTP://WWW.PERCIVAL.CO.UK/ML7" />
+      <xsd:import schemaLocation="http://jse-vm-pvl-2008/Train/RDService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://jse-vm-pvl-2008/Train/RDService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/RDService" />
+      <xsd:import schemaLocation="http://jse-vm-pvl-2008/Train/RDService.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/RD" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IRDService_Version_InputMessage">
+    <wsdl:part name="parameters" element="tns:Version" />
+  </wsdl:message>
+  <wsdl:message name="IRDService_Version_OutputMessage">
+    <wsdl:part name="parameters" element="tns:VersionResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRDService_GetOperationSchema_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetOperationSchema" />
+  </wsdl:message>
+  <wsdl:message name="IRDService_GetOperationSchema_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetOperationSchemaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRDService_WebLogin_InputMessage">
+    <wsdl:part name="parameters" element="tns:WebLogin" />
+  </wsdl:message>
+  <wsdl:message name="IRDService_WebLogin_OutputMessage">
+    <wsdl:part name="parameters" element="tns:WebLoginResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRDService_RegardLogin_InputMessage">
+    <wsdl:part name="parameters" element="tns:RegardLogin" />
+  </wsdl:message>
+  <wsdl:message name="IRDService_RegardLogin_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RegardLoginResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRDService_DependLogin_InputMessage">
+    <wsdl:part name="parameters" element="tns:DependLogin" />
+  </wsdl:message>
+  <wsdl:message name="IRDService_DependLogin_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DependLoginResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRDService_Logout_InputMessage">
+    <wsdl:part name="parameters" element="tns:Logout" />
+  </wsdl:message>
+  <wsdl:message name="IRDService_Logout_OutputMessage">
+    <wsdl:part name="parameters" element="tns:LogoutResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRDService_LoginChangeWorkgroup_InputMessage">
+    <wsdl:part name="parameters" element="tns:LoginChangeWorkgroup" />
+  </wsdl:message>
+  <wsdl:message name="IRDService_LoginChangeWorkgroup_OutputMessage">
+    <wsdl:part name="parameters" element="tns:LoginChangeWorkgroupResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRDService_DataSetListZIP_InputMessage">
+    <wsdl:part name="parameters" element="tns:DataSetListZIP" />
+  </wsdl:message>
+  <wsdl:message name="IRDService_DataSetListZIP_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DataSetListZIPResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRDService_DataSetList_InputMessage">
+    <wsdl:part name="parameters" element="tns:DataSetList" />
+  </wsdl:message>
+  <wsdl:message name="IRDService_DataSetList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DataSetListResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRDService_DataSetUpdate_InputMessage">
+    <wsdl:part name="parameters" element="tns:DataSetUpdate" />
+  </wsdl:message>
+  <wsdl:message name="IRDService_DataSetUpdate_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DataSetUpdateResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRDService_DataSetUpdateZIP_InputMessage">
+    <wsdl:part name="parameters" element="tns:DataSetUpdateZIP" />
+  </wsdl:message>
+  <wsdl:message name="IRDService_DataSetUpdateZIP_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DataSetUpdateZIPResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRDService_DataSetConfirm_InputMessage">
+    <wsdl:part name="parameters" element="tns:DataSetConfirm" />
+  </wsdl:message>
+  <wsdl:message name="IRDService_DataSetConfirm_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DataSetConfirmResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRDService_DataSetReject_InputMessage">
+    <wsdl:part name="parameters" element="tns:DataSetReject" />
+  </wsdl:message>
+  <wsdl:message name="IRDService_DataSetReject_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DataSetRejectResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRDService_GetOptions_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetOptions" />
+  </wsdl:message>
+  <wsdl:message name="IRDService_GetOptions_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetOptionsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRDService_DefineAuditReference_InputMessage">
+    <wsdl:part name="parameters" element="tns:DefineAuditReference" />
+  </wsdl:message>
+  <wsdl:message name="IRDService_DefineAuditReference_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DefineAuditReferenceResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IRDService">
+    <wsdl:operation name="Version">
+      <wsdl:input wsaw:Action="HTTP://WWW.PERCIVAL.CO.UK/ML7/IRDService/Version" message="tns:IRDService_Version_InputMessage" />
+      <wsdl:output wsaw:Action="HTTP://WWW.PERCIVAL.CO.UK/ML7/IRDService/VersionResponse" message="tns:IRDService_Version_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetOperationSchema">
+      <wsdl:input wsaw:Action="HTTP://WWW.PERCIVAL.CO.UK/ML7/IRDService/GetOperationSchema" message="tns:IRDService_GetOperationSchema_InputMessage" />
+      <wsdl:output wsaw:Action="HTTP://WWW.PERCIVAL.CO.UK/ML7/IRDService/GetOperationSchemaResponse" message="tns:IRDService_GetOperationSchema_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="WebLogin">
+      <wsdl:input wsaw:Action="HTTP://WWW.PERCIVAL.CO.UK/ML7/IRDService/WebLogin" message="tns:IRDService_WebLogin_InputMessage" />
+      <wsdl:output wsaw:Action="HTTP://WWW.PERCIVAL.CO.UK/ML7/IRDService/WebLoginResponse" message="tns:IRDService_WebLogin_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RegardLogin">
+      <wsdl:input wsaw:Action="HTTP://WWW.PERCIVAL.CO.UK/ML7/IRDService/RegardLogin" message="tns:IRDService_RegardLogin_InputMessage" />
+      <wsdl:output wsaw:Action="HTTP://WWW.PERCIVAL.CO.UK/ML7/IRDService/RegardLoginResponse" message="tns:IRDService_RegardLogin_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DependLogin">
+      <wsdl:input wsaw:Action="HTTP://WWW.PERCIVAL.CO.UK/ML7/IRDService/DependLogin" message="tns:IRDService_DependLogin_InputMessage" />
+      <wsdl:output wsaw:Action="HTTP://WWW.PERCIVAL.CO.UK/ML7/IRDService/DependLoginResponse" message="tns:IRDService_DependLogin_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Logout">
+      <wsdl:input wsaw:Action="HTTP://WWW.PERCIVAL.CO.UK/ML7/IRDService/Logout" message="tns:IRDService_Logout_InputMessage" />
+      <wsdl:output wsaw:Action="HTTP://WWW.PERCIVAL.CO.UK/ML7/IRDService/LogoutResponse" message="tns:IRDService_Logout_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="LoginChangeWorkgroup">
+      <wsdl:input wsaw:Action="HTTP://WWW.PERCIVAL.CO.UK/ML7/IRDService/LoginChangeWorkgroup" message="tns:IRDService_LoginChangeWorkgroup_InputMessage" />
+      <wsdl:output wsaw:Action="HTTP://WWW.PERCIVAL.CO.UK/ML7/IRDService/LoginChangeWorkgroupResponse" message="tns:IRDService_LoginChangeWorkgroup_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DataSetListZIP">
+      <wsdl:input wsaw:Action="HTTP://WWW.PERCIVAL.CO.UK/ML7/IRDService/DataSetListZIP" message="tns:IRDService_DataSetListZIP_InputMessage" />
+      <wsdl:output wsaw:Action="HTTP://WWW.PERCIVAL.CO.UK/ML7/IRDService/DataSetListZIPResponse" message="tns:IRDService_DataSetListZIP_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DataSetList">
+      <wsdl:input wsaw:Action="HTTP://WWW.PERCIVAL.CO.UK/ML7/IRDService/DataSetList" message="tns:IRDService_DataSetList_InputMessage" />
+      <wsdl:output wsaw:Action="HTTP://WWW.PERCIVAL.CO.UK/ML7/IRDService/DataSetListResponse" message="tns:IRDService_DataSetList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DataSetUpdate">
+      <wsdl:input wsaw:Action="HTTP://WWW.PERCIVAL.CO.UK/ML7/IRDService/DataSetUpdate" message="tns:IRDService_DataSetUpdate_InputMessage" />
+      <wsdl:output wsaw:Action="HTTP://WWW.PERCIVAL.CO.UK/ML7/IRDService/DataSetUpdateResponse" message="tns:IRDService_DataSetUpdate_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DataSetUpdateZIP">
+      <wsdl:input wsaw:Action="HTTP://WWW.PERCIVAL.CO.UK/ML7/IRDService/DataSetUpdateZIP" message="tns:IRDService_DataSetUpdateZIP_InputMessage" />
+      <wsdl:output wsaw:Action="HTTP://WWW.PERCIVAL.CO.UK/ML7/IRDService/DataSetUpdateZIPResponse" message="tns:IRDService_DataSetUpdateZIP_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DataSetConfirm">
+      <wsdl:input wsaw:Action="HTTP://WWW.PERCIVAL.CO.UK/ML7/IRDService/DataSetConfirm" message="tns:IRDService_DataSetConfirm_InputMessage" />
+      <wsdl:output wsaw:Action="HTTP://WWW.PERCIVAL.CO.UK/ML7/IRDService/DataSetConfirmResponse" message="tns:IRDService_DataSetConfirm_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DataSetReject">
+      <wsdl:input wsaw:Action="HTTP://WWW.PERCIVAL.CO.UK/ML7/IRDService/DataSetReject" message="tns:IRDService_DataSetReject_InputMessage" />
+      <wsdl:output wsaw:Action="HTTP://WWW.PERCIVAL.CO.UK/ML7/IRDService/DataSetRejectResponse" message="tns:IRDService_DataSetReject_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetOptions">
+      <wsdl:input wsaw:Action="HTTP://WWW.PERCIVAL.CO.UK/ML7/IRDService/GetOptions" message="tns:IRDService_GetOptions_InputMessage" />
+      <wsdl:output wsaw:Action="HTTP://WWW.PERCIVAL.CO.UK/ML7/IRDService/GetOptionsResponse" message="tns:IRDService_GetOptions_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DefineAuditReference">
+      <wsdl:input wsaw:Action="HTTP://WWW.PERCIVAL.CO.UK/ML7/IRDService/DefineAuditReference" message="tns:IRDService_DefineAuditReference_InputMessage" />
+      <wsdl:output wsaw:Action="HTTP://WWW.PERCIVAL.CO.UK/ML7/IRDService/DefineAuditReferenceResponse" message="tns:IRDService_DefineAuditReference_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>

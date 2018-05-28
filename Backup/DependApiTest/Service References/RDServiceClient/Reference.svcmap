@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="c63d4ca5-81c4-449c-b5d0-be77a1af06a0" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://JSE-VM-PVL-2008/train/RDService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="RDService.xsd" MetadataType="Schema" ID="93e9582f-112c-4ffd-b3b6-c675f765f002" SourceId="1" SourceUrl="http://jse-vm-pvl-2008/Train/RDService.svc?xsd=xsd1" />
+    <MetadataFile FileName="RDService.wsdl" MetadataType="Wsdl" ID="1eeb78d6-703c-4f86-a01e-3a0a2244ceef" SourceId="1" SourceUrl="http://jse-vm-pvl-2008/Train/RDService.svc?wsdl" />
+    <MetadataFile FileName="RDService1.wsdl" MetadataType="Wsdl" ID="5136eb9b-8fb7-407f-99dd-2f76bb2d1801" SourceId="1" SourceUrl="http://jse-vm-pvl-2008/Train/RDService.svc?wsdl=wsdl0" />
+    <MetadataFile FileName="RDService1.xsd" MetadataType="Schema" ID="43629627-4fd3-4806-a24c-59905a1fd690" SourceId="1" SourceUrl="http://jse-vm-pvl-2008/Train/RDService.svc?xsd=xsd2" />
+    <MetadataFile FileName="RDService.disco" MetadataType="Disco" ID="fe7ed9ae-4066-4b3b-8316-320b835477c7" SourceId="1" SourceUrl="http://jse-vm-pvl-2008/Train/RDService.svc?disco" />
+    <MetadataFile FileName="RDService2.xsd" MetadataType="Schema" ID="48f31f72-16a9-40ca-a912-abb5a60c102c" SourceId="1" SourceUrl="http://jse-vm-pvl-2008/Train/RDService.svc?xsd=xsd3" />
+    <MetadataFile FileName="RDService3.xsd" MetadataType="Schema" ID="9f635c00-df42-43f8-97e1-a45080bc8a7a" SourceId="1" SourceUrl="http://jse-vm-pvl-2008/Train/RDService.svc?xsd=xsd0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

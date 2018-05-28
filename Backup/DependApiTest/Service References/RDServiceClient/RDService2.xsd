@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/RD" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/RD" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="ArrayOfQueryParams">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="QueryParams" nillable="true" type="tns:QueryParams" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfQueryParams" nillable="true" type="tns:ArrayOfQueryParams" />
+  <xs:complexType name="QueryParams">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="PARAMS" nillable="true" type="tns:ArrayOfPair" />
+      <xs:element minOccurs="0" name="PARAM_ORDER" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PARAM_SELECT" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PARAM_TARGET" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PARAM_WHERE" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="QueryParams" nillable="true" type="tns:QueryParams" />
+  <xs:complexType name="ArrayOfPair">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Pair" nillable="true" type="tns:Pair" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfPair" nillable="true" type="tns:ArrayOfPair" />
+  <xs:complexType name="Pair">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="NAME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="VALUE" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Pair" nillable="true" type="tns:Pair" />
+  <xs:complexType name="AuditReference">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ActionType" type="xs:int" />
+      <xs:element minOccurs="0" name="AuditRef" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="BillAmount" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="BillCenterID" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="BillChargeDescr" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="BillVAT" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="Document" nillable="true" type="tns:ArrayOfAuditDocument" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="AuditReference" nillable="true" type="tns:AuditReference" />
+  <xs:complexType name="ArrayOfAuditDocument">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="AuditDocument" nillable="true" type="tns:AuditDocument" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfAuditDocument" nillable="true" type="tns:ArrayOfAuditDocument" />
+  <xs:complexType name="AuditDocument">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="DocAttachementFile" nillable="true" type="xs:base64Binary" />
+      <xs:element minOccurs="0" name="DocAttachementFilename" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DocDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="DocReference" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DocReferenceType" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DocRemarks" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="AuditDocument" nillable="true" type="tns:AuditDocument" />
+</xs:schema>
